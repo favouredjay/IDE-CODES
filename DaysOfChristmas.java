@@ -56,9 +56,9 @@ public class DaysOfChristmas {
                 case 2:
                     System.out.println("Two Turtle dove, and");
 
-
                 default:
                     System.out.println("A Partridge in a pear-tree!! \n ");
+
 
             }
             num++;

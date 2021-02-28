@@ -55,9 +55,9 @@ public class WowChristmas {
                         System.out.println("Four Colly birds!!");
                     case 3:
                         System.out.println("Three French hens!!");
-                    case 2:
-                        System.out.println("Two Turtle dove, and");
 
+                        case 2:
+                        System.out.println("Two Turtle dove, and");
 
                     default:
                         System.out.println("A Partridge in a pear-tree!! \n ");
