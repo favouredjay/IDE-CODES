@@ -2,7 +2,7 @@ package chapterFour;
 
 import java.util.Scanner;
 
-public class ChapterFourP {
+public class ChapterFourPalindrome {
    public static void main(String[] args) {
        int digits = 0;
        int i = 0;

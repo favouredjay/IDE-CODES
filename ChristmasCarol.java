@@ -7,7 +7,7 @@ public class ChristmasCarol {
         int num = 1;
 
         while (num <= 12) {
-            System.out.print("On the " + num);
+            System.out.print("On the ");
 
             switch (num) {
                 case 1 -> System.out.println("first");
@@ -30,34 +30,26 @@ public class ChristmasCarol {
                 switch (num) {
                     case 12:
                         System.out.println("Twelve Lords a Leaping!!");
-
                     case 11:
                         System.out.println("Eleven Ladies Dancing");
-
                     case 10:
                         System.out.println("ten Pipers piping!!");
-
                     case 9:
                         System.out.println("Nine Drummers Drumming!!");
                     case 8:
                         System.out.println("Eight Maids are milking!!");
                     case 7:
                         System.out.println("Seven swans a swimming!!");
-
                     case 6:
                         System.out.println("Six Geese a laying!!");
-
                     case 5:
                         System.out.println("Five golden rings!!");
-
                     case 4:
                         System.out.println("Four Colly birds!!");
                     case 3:
                         System.out.println("Three French hens!!");
                     case 2:
                         System.out.println("Two Turtle dove, and");
-
-
                     default:
                         System.out.println("A Partridge in a pear-tree!! \n ");
                 }
