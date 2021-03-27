@@ -1,45 +1,44 @@
-"# IDE-CODES" 
 package chapterFour;
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+public class Chapter6 {
 
-import static org.junit.jupiter.api.Assertions.*;
 
-class Chapter6Test {
+    public double getCircleArea(double radius){
+        return (Math.PI * Math.pow(radius , 2));
 
-    Chapter6 chapter6 = new Chapter6();
-
-    @Test
-    void canCalculatePythagorasTheorem(){
-        chapter6.pythagoras(3,4);
-        assertEquals(5, chapter6.pythagoras(3,4));
-        assertEquals(13, chapter6.pythagoras(5, 12));
-        assertEquals(17, chapter6.pythagoras(8, 15));
     }
 
-    @Test
-    void canCalculatePowerOfInteger(){
-        chapter6.getPowerOfInteger(3, 4);
-        assertEquals(81, chapter6.getPowerOfInteger(3,4));
-        assertEquals(0,chapter6.getPowerOfInteger(0, 2));
-        assertEquals(9, chapter6.getPowerOfInteger(-3, 2));
+    public double pythagoras(double opposite, double adjacent){
+      double hypotenuse = Math.sqrt(Math.pow (opposite , 2) + Math.pow (adjacent , 2));
+      return hypotenuse;
     }
 
-    @Test
-    void canRecogniseMultiplesOf(){
-        chapter6.isMultipleOf(24, 2);
-        assertEquals(true, chapter6.isMultipleOf(24, 4));
+
+    public int getPowerOfInteger(int base, int exponent) {
+        int powerOfInteger = 1;
+
+        for (int counter = 0; counter< exponent ; counter++ ){
+            if (exponent > 0);
+            powerOfInteger = base * powerOfInteger;
+        }
+        return powerOfInteger;
     }
 
-    @Test
-    void isEven(){
-        assertEquals(true, chapter6.getEvenNumbers(92));
+    public Boolean isMultipleOf(int numerator, int denominator) {
+        for (int counter = 0; counter < numerator; counter++) ;
+        if (numerator % denominator == 0) {
+
+            return true;
+        } else {
+            return false;
+        }
     }
 
-    @Test
-    void circleArea(){
-        chapter6.getCircleArea(10);
-        assertEquals(314.1592653589793, chapter6.getCircleArea(10));
+    public boolean getEvenNumbers(int num) {
+        if (num % 2 == 0) {
+            return true;
+        }
+        else return false;
     }
-}
+
+    }
