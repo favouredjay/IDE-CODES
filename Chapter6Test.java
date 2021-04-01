@@ -33,7 +33,7 @@ class Chapter6Test {
 
     @Test
     void isEven(){
-        assertEquals(true, chapter6.getEvenNumbers(92));
+        assertTrue(chapter6.getEvenNumbers(92));
     }
 
     @Test
@@ -41,4 +41,23 @@ class Chapter6Test {
         chapter6.getCircleArea(10);
         assertEquals(314.1592653589793, chapter6.getCircleArea(10));
     }
+    @Test
+    void temperatureConversion(){
+        assertEquals(212, chapter6.convertToFahrenheit(100) );
+    }
+    @Test
+    void convertTemperature(){
+        assertEquals(37.77777777777778, chapter6.convertToCelsius(100));
+    }
+    @Test
+    void isPrime(){
+
+        assertTrue(chapter6.isPrime(13));
+    }
+
+    @Test
+    void isAPerfectNumber(){
+        assertTrue( chapter6.isPerfectNumber(6));
+    }
+
 }

@@ -1,6 +1,7 @@
 package chapterFour;
 
 public class Chapter6 {
+    private int perfect = 0;
 
 
     public double getCircleArea(double radius){
@@ -41,4 +42,34 @@ public class Chapter6 {
         else return false;
     }
 
+    public double convertToFahrenheit(double celsius) {
+        double fahrenheit = 9.0 / 5.0 * celsius + 32;
+        return fahrenheit;
     }
+
+
+    public double convertToCelsius(double fahrenheit) {
+        double celsius = celsius = 5.0 / 9.0 * (fahrenheit - 32);
+        return celsius;
+    }
+    public boolean isPrime(int number) {
+        for (int i = 2; i < number; i++){
+            if (number % i == 0)
+            return false;
+    }
+        return true;
+    }
+
+    public boolean isPerfectNumber(int number) {
+        int i;
+        for (i = 1; i < number; i++) {
+            if (number % i == 0){
+                perfect = perfect + i;
+            }
+            }
+        if (number == perfect) {
+            return true;
+        }
+        else return false;
+    }
+}
